@@ -25,7 +25,9 @@ enum Theme: String {
     case teal
     case yellow
     
-    
+    var name : String {
+        self.rawValue.capitalized
+    }
     var accentColor: Color {
         switch self {
             case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
